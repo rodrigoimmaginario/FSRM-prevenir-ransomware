@@ -1,0 +1,1 @@
+Get-SmbShare -Special $false | ForEach-Object { Unblock-SmbShareAccess -Name $_.Name -AccountName 'XXXXXXX' -Force }
